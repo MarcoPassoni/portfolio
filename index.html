@@ -1711,6 +1711,59 @@
         pointer-events: none;
     }
 
+    /* ── ANTHROPIC EDUCATION cluster ─────────────────────────── */
+    .cert-group-label {
+        grid-column: 1 / -1;
+        display: flex;
+        align-items: center;
+        gap: 0.65rem;
+        font-family: var(--mono);
+        font-size: 0.72rem;
+        color: var(--amber);
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 0.5rem 0 0.6rem;
+        border-bottom: 1px solid rgba(245, 158, 11, 0.20);
+        margin-top: 0.5rem;
+    }
+
+    .cert-group-label svg {
+        flex-shrink: 0;
+        opacity: 0.85;
+    }
+
+    .cert.anthropic::before {
+        background: linear-gradient(90deg, var(--amber), #ff8c42, #fbbf24, var(--amber));
+        background-size: 200% auto;
+        animation: shimmer 4s linear infinite;
+    }
+
+    .cert.anthropic:hover {
+        border-color: rgba(245, 158, 11, 0.32);
+        box-shadow: 0 16px 48px rgba(245, 158, 11, 0.07), 0 8px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    .cert.anthropic .cert-tag {
+        color: var(--amber);
+    }
+
+    .cert.anthropic .cert-link {
+        color: var(--amber);
+        border-color: rgba(245, 158, 11, 0.35);
+    }
+
+    .cert.anthropic .cert-link:hover {
+        color: #fbbf24;
+        border-color: rgba(245, 158, 11, 0.65);
+        background: rgba(245, 158, 11, 0.06);
+    }
+
+    /* light mode overrides for Anthropic cluster */
+    html.light .cert.anthropic:hover {
+        box-shadow: 0 16px 48px rgba(245, 158, 11, 0.10), 0 8px 24px rgba(0, 0, 0, 0.06);
+    }
+
     /* ═══════════════════════════════════════════════════════════
       16. CONTACT
     ═══════════════════════════════════════════════════════════ */
@@ -3062,6 +3115,83 @@
             <div class="cert-id">Monticello Brianza · 2019 — 2024</div>
             <span class="cert-link" style="opacity:0.55;pointer-events:none;">Academic credential</span>
         </article>
+
+        <!-- ── ANTHROPIC EDUCATION GROUP ───────────────────── -->
+        <div class="cert-group-label">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                <path d="M13.8 2.3c-.4-1-1.6-1.4-2.5-.9-.4.2-.7.6-.9.9L4.2 17.1c-.5 1 0 2.2 1 2.6.3.1.6.2.9.1h3.5l3-8.3 3 8.3h3.5c1.1 0 2-.9 2-2 0-.3-.1-.6-.2-.8L13.8 2.3z"/>
+            </svg>
+            Anthropic Education · April 2026
+        </div>
+
+        <article class="cert anthropic" data-tilt>
+            <div class="cert-top">
+                <span class="cert-issuer">Anthropic Education</span>
+                <span class="cert-status verified">
+                    <span class="cert-status-dot"></span>VERIFIED
+                </span>
+            </div>
+            <div class="cert-name">Claude 101</div>
+            <div class="cert-tag">AI Fundamentals</div>
+            <div class="cert-id">April 2026</div>
+            <a href="https://verify.skilljar.com/c/q7e47zarhrx5"
+               target="_blank" rel="noopener" class="cert-link">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                View credential
+            </a>
+        </article>
+
+        <article class="cert anthropic" data-tilt>
+            <div class="cert-top">
+                <span class="cert-issuer">Anthropic Education</span>
+                <span class="cert-status verified">
+                    <span class="cert-status-dot"></span>VERIFIED
+                </span>
+            </div>
+            <div class="cert-name">Claude Code 101</div>
+            <div class="cert-tag">Developer Foundations</div>
+            <div class="cert-id">April 2026</div>
+            <a href="https://verify.skilljar.com/c/dybxsudzcfve"
+               target="_blank" rel="noopener" class="cert-link">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                View credential
+            </a>
+        </article>
+
+        <article class="cert anthropic" data-tilt>
+            <div class="cert-top">
+                <span class="cert-issuer">Anthropic Education</span>
+                <span class="cert-status verified">
+                    <span class="cert-status-dot"></span>VERIFIED
+                </span>
+            </div>
+            <div class="cert-name">Claude Code in Action</div>
+            <div class="cert-tag">Applied Development</div>
+            <div class="cert-id">April 2026</div>
+            <a href="https://verify.skilljar.com/c/q2s4pigbkcop"
+               target="_blank" rel="noopener" class="cert-link">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                View credential
+            </a>
+        </article>
+
+        <article class="cert anthropic" data-tilt>
+            <div class="cert-top">
+                <span class="cert-issuer">Anthropic Education</span>
+                <span class="cert-status verified">
+                    <span class="cert-status-dot"></span>VERIFIED
+                </span>
+            </div>
+            <div class="cert-name">Introduction to Claude Cowork</div>
+            <div class="cert-tag">Claude Cowork</div>
+            <div class="cert-id">April 2026</div>
+            <a href="https://verify.skilljar.com/c/xx8as23n73ah"
+               target="_blank" rel="noopener" class="cert-link">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                View credential
+            </a>
+        </article>
+
     </div>
 </section>
 
